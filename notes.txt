@@ -1,2 +1,0 @@
-Creating a vertual environment: py -m venv .[name]
-Activating vertual environment: source .[name]/Scripts/activate
