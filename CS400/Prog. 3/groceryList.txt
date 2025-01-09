@@ -1,0 +1,17 @@
+produce, type, quantity, cost
+chery, fruit, 16, 2
+carrot, vegetable, 8, 2
+banana, fruit, 4, 2
+daikon radish, vegetable, 4, 2
+avocado, vegetable, 2, 3
+apple, fruit, 2, 1
+durian, fruit, 1, 3
+broccoli, vegetable, 1, 2
+banana, fruit, 2, 1
+daikon radish, vegetable, 3, 1
+apple, fruit, 4, 2
+chery, fruit, 24, 3
+broccoli, vegetable, 2, 4
+durian, fruit, 2, 6
+avocado, vegetable, 1, 2
+carrot, vegetable, 4, 1

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <script>
+            function createGrid(){
+                for(var i = 0; i < 9; i++){
+                    document.body.innerHTML += '<button onclick="handler(event);">-</button>'
+                    if((i != 0) && i%3 == 2){
+                        document.body.innerHTML += "<br>";
+                    }
+                }
+            }
+
+            let turn = "X";
+            function checkWin() {return true;};
+            let handler = event => {
+                event.target.innerHTML = turn;
+                if(checkWin()){
+                    // 1. display the winner of the game
+                    let output = document.querySelector("#outputScore");
+                    output.innerHTML = turn + " has won!!!";
+                    // 2. prevent further button marking 
+                    document.querySelectorAll("button").forEach( input => {
+                        input.onclick = ""; // onclick, do nothing
+                    })
+
+                }
+                if(turn == "X") turn = "O";
+                else if (turn == "O") turn = "X";
+            }
+        </script>
+    </head>
+    <body onload="createGrid()">
+        <h1 id="outputScore"></h1>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<title>Lambda Expressions</title>
+		<meta name="author" content="Zander Lowery">
+	</head>
+
+<!-- ____________________________________________________________ --> 
+	
+	<body>
+		<!--Banner information-->
+		 <div class = "container center" style = "height: 100px">
+			<img id="banner-image" alt="banner image" src="https://wallpapers.com/images/hd/java-coding-language-om3t4dnugpbdraxp.webp">
+			<h1 id="banner-text" class = "centered">LAMBDA EXPRESSIONS</h1>
+		</div>
+		
+		<div style = "margin-right: 4em"> <!-- prevents all content from reaching the very end of the screen -->
+		
+			<!-- Main title elements -->
+		<h1 class = "card-head">What are Lambda Expressions?</h1> 
+		<h2 class = "card-subhead">...and how do they work?</h2>
+
+		<!-- Abstract Classes vs. Lamba Expressions -->
+		<h3 class = "section">Abstract Classes vs. Lambda Expressions</h3>
+		<ul class = "list-main">
+			<li> Abstract Classes </li>
+				<ul class = "list-sub"> 
+					<li> 
+						A programmer utilizes an <b>Abstract Class</b> when they instantiate a new object and define it there. For example:<br><br>
+						<code>
+							<pre class = "codeLine">	myClass className = new myClass(){</pre>
+							<pre class = "codeLine">		methodName(){</pre>
+							<pre class = "codeLine">			someCode;</pre>
+							<pre class = "codeLine">		}</pre>
+							<pre class = "codeLine">	}</pre>
+						</code>
+					</li><br>
+					<li>Concisely describes implementation for a single object</li>
+					<li>Convienient for simple and single/limited use objects</li>
+					<li>Cannot reference type (no name) making testing difficult</li>
+				</ul>
+			<li> Lamba Expressions </li>
+				<ul class = "list-sub">
+					<li> More concise syntax for objects <u>with a single abstract/undefined method</u></li>
+					<li> You can not use a lambda expression if the object or interface doesn't have just one abstract/undefined method</li>
+				</ul>
+		</ul>
+		<h3 class = "section">Using a Lamba Expression</h3>
+		<ul>
+			<li> 
+				To use a lamba expression, the programmer must first create either <b>a)</b> A functional interface or <b>b)</b> A class with ONE abstract method.
+				<br><br>This is the method that you will be creating a lambda expression for.
+			</li>
+			<li> 
+				A programmer can utilize a lamba expression in different ways. One way is writting the method definition directly:<br><br>
+				<code>
+					<pre class = "codeLine">	myObject object = (x,y) -&gt; {</pre>
+					<pre class = "codeLine">		someCode;</pre>
+					<pre class = "codeLine">	}</pre>
+				</code><br>
+
+				OR, my just providing what the method should return:<br><br>
+				<code>
+                	<pre class = "codeLine">	myObject object = (Integer x, Integer y) -&gt; x + y;</pre>
+				</code>
+				<pre><i style="font-size: 10px;">	  Notice how no "return" statement is used to return  x + y</i></pre>
+			</li>
+			<li>
+				<img src="https://cdn-images-1.medium.com/v2/resize:fit:639/0*2Gqb-QxDKGNESn5f" id="lambda-img" alt="Lamba expression syntax">
+				(x, y) = the parameter(s) (seperated by a comma ',') utilized in the abstract method. If the method only utilizes one parameter, you do not need the brackets. If it utilizes no parameters, use "()".
+			</li>
+			<li>Any calls to "object" within the class will utilize the provided class definition</li>
+			<li>Because of this, you can create multiple definitions to call in the class! For example, you can create another object, say, object2, with a different method definition</li>
+		</ul>
+
+		For more detailed information, check out the w3schools explaination <a href="https://www.w3schools.com/java/java_lambda.asp" class = "ani-fontSize" target = "_blank">here</a>.
+		</div>
+	</body>
+</html>
